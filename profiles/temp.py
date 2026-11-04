@@ -198,18 +198,3 @@ def render_and_return_image(username, name, bio, public_repos, followers):
     )
 
     return image
-
-
-# Generate passport-style profile
-image = render_and_return_image(
-    "rabi",
-    "The Rabi",
-    "Welcome to my GitHub profile!",
-    10,
-    6767
-)
-
-# Save image
-image.save("output.png")
-
-print("Passport-style profile saved as output.png")
