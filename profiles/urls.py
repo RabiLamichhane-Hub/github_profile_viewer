@@ -3,7 +3,7 @@ from . import views
 
 
 urlpatterns = [
-    path("", views.search, name="search"),
+    path("", views.jsearch, name="jsearch"),
     path("bookmark/<str:username>/", views.bookmark, name="bookmark"),
     path("bookmarks/", views.bookmark_list, name="bookmarks"),
     path(
@@ -12,4 +12,5 @@ urlpatterns = [
         name="bookmark_delete",
     ),
     path('visualize/', views.visualize, name='visualize'),
+    path("api/", views.search, name="search"),
 ]
